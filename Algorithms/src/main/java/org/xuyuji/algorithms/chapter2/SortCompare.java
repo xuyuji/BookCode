@@ -2,9 +2,10 @@ package org.xuyuji.algorithms.chapter2;
 
 import org.xuyuji.algorithms.chapter2.exercise.E2_1_24;
 import org.xuyuji.algorithms.chapter2.exercise.E2_1_25;
-import org.xuyuji.algorithms.tools.StdOut;
-import org.xuyuji.algorithms.tools.StdRandom;
-import org.xuyuji.algorithms.tools.Stopwatch;
+
+import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.StdRandom;
+import edu.princeton.cs.algs4.Stopwatch;
 
 /**
  * cmd:classes>java org.xuyuji.algorithms.chapter2.SortCompare Insertion

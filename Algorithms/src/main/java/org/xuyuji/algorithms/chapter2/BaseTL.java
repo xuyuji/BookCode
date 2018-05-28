@@ -1,6 +1,6 @@
 package org.xuyuji.algorithms.chapter2;
 
-import org.xuyuji.algorithms.tools.StdOut;
+import edu.princeton.cs.algs4.StdOut;
 
 public abstract class BaseTL {
 	public abstract void sort(Comparable[] a);

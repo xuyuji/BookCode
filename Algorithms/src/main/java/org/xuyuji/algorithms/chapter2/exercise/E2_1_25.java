@@ -1,7 +1,8 @@
 package org.xuyuji.algorithms.chapter2.exercise;
 
 import org.xuyuji.algorithms.chapter2.BaseTL;
-import org.xuyuji.algorithms.tools.In;
+
+import edu.princeton.cs.algs4.In;
 
 /**
  * 不需要交换的插入排序（只交换头尾，中间仅后移） cmd:classes>java

@@ -1,7 +1,8 @@
 package org.xuyuji.algorithms.chapter2.exercise;
 
 import org.xuyuji.algorithms.chapter2.BaseTL;
-import org.xuyuji.algorithms.tools.In;
+
+import edu.princeton.cs.algs4.In;
 
 public class E2_1_24and2_1_25 extends BaseTL {
 

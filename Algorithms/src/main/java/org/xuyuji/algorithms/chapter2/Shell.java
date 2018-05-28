@@ -1,6 +1,6 @@
 package org.xuyuji.algorithms.chapter2;
 
-import org.xuyuji.algorithms.tools.In;
+import edu.princeton.cs.algs4.In;
 
 /**
  * cmd:classes>java org.xuyuji.algorithms.chapter2.Shell <

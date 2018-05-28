@@ -1,8 +1,9 @@
 package org.xuyuji.algorithms.chapter2.exercise;
 
 import org.xuyuji.algorithms.chapter2.BaseTL;
-import org.xuyuji.algorithms.tools.StdDraw;
-import org.xuyuji.algorithms.tools.StdRandom;
+
+import edu.princeton.cs.algs4.StdDraw;
+import edu.princeton.cs.algs4.StdRandom;
 
 public class E2_1_17 {
 	public static Double[] getDoubleArray(int len) {
