@@ -1,6 +1,7 @@
 #lang racket
 
 ;definition function add?
+(provide add?)
 (define add?
   (lambda (x y)
     (cond
