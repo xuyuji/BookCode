@@ -12,6 +12,7 @@
 (display "add? 46 12:")(add? 46 12)
 
 ;definition function sub?
+(provide sub?)
 (define sub?
   (lambda(x y)
     (cond
@@ -36,15 +37,16 @@
 (display "addtup (8 55 5 555):")(addtup (list 8 55 5 555))
 
 ;definition function multiply?
-(define multiply
+(provide multiply?)
+(define multiply?
   (lambda (x y)
     (cond
       ((zero? y) 0)
-      (else(add? x (multiply x (sub1 y)))))))
+      (else(add? x (multiply? x (sub1 y)))))))
 
 ;execute multiply?
-(display "multiply? 5 3:")(multiply 5 3)
-(display "multiply? 13 4:")(multiply 13 4)
+(display "multiply? 5 3:")(multiply? 5 3)
+(display "multiply? 13 4:")(multiply? 13 4)
 
 ;definition function tup+
 (define tup+
@@ -99,26 +101,28 @@
 (display "2=2:")(= 2 2)
 
 ;definition function ^
+(provide ^)
 (define ^
   (lambda (x y)
     (cond
       ((zero? y) 1)
-      (else(multiply x (^ x (sub1 y)))))))
+      (else(multiply? x (^ x (sub1 y)))))))
 
 ;execute ^
 (display "1^1:")(^ 1 1)
 (display "2^3:")(^ 2 3)
 (display "5^3:")(^ 5 3)
 
-;definition function divide
-(define divide
+;definition function divide?
+(provide divide?)
+(define divide?
   (lambda (x y)
     (cond
       ((< x y)0)
-      (else(add1(divide (sub? x y) y))))))
+      (else(add1(divide? (sub? x y) y))))))
 
 ;execute divide
-(display "divide 15 4:")(divide 15 4)
+(display "divide 15 4:")(divide? 15 4)
 
 ;definition function length
 (define length
