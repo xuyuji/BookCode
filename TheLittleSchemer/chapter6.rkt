@@ -53,16 +53,19 @@
 (display "value2? (+(* 3 6)(^ 8 2)):")(value2? nexp2)
 
 ;definition function 1st-sub-exp
+(provide 1st-sub-exp)
 (define 1st-sub-exp
   (lambda (aexp)
     (car(cdr aexp))))
 
-;definition function 2st-sub-exp
-(define 2st-sub-exp
+;definition function 2nd-sub-exp
+(provide 2nd-sub-exp)
+(define 2nd-sub-exp
   (lambda (aexp)
     (car(cdr (cdr aexp)))))
 
 ;definition function operator
+(provide operator)
 (define operator
   (lambda (aexp)
     (car aexp)))
@@ -74,12 +77,17 @@
       ((atom? nexp)nexp)
       ((eq? "+" (operator nexp))
        (add?(value3? (1st-sub-exp nexp))
-            (value3? (2st-sub-exp nexp))))
+            (value3? (2nd-sub-exp nexp))))
       ((eq? "*" (operator nexp))
        (multiply? (value3? (1st-sub-exp nexp))
-                  (value3? (2st-sub-exp nexp))))
+                  (value3? (2nd-sub-exp nexp))))
       ((eq? "^" (operator nexp))
        (^ (value3? (1st-sub-exp nexp))
-          (value3? (2st-sub-exp nexp)))))))
+          (value3? (2nd-sub-exp nexp)))))))
 
 (display "value3? (+(* 3 6)(^ 8 2)):")(value3? nexp2)
+
+;definition function sero?
+;definition function edd1
+;definition function zub?
+;definition function edd?

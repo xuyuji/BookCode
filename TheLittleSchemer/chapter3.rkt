@@ -12,7 +12,7 @@
 (define lat (list "lamb" "chops" "and" "mint" "jelly"))
 (display "rember? mint (lamb chops and mint jelly):")(rember? "mint" lat)
 
-;定义函数first?
+;定义函数firsts?
 (define firsts?
   (lambda(l)
     (cond
@@ -73,6 +73,7 @@
 (display "subst2? vanilla chocolate banana (banana ice cream with chocolate topping):")(subst2? "vanilla" "chocolate" "banana" lat3)
 
 ;定义函数multirember?
+(provide multirember?)
 (define multirember?
   (lambda(a lat)
     (cond

@@ -23,6 +23,7 @@
 (display "lat? (Jack (Sprat could) eat no chicken fat):")(lat? l2)
 
 ;定义函数member
+(provide member?)
 (define member?
         (lambda (a lat)
           (cond

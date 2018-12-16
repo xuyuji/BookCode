@@ -89,6 +89,7 @@
 (display "< 6 6:")(< 6 6)
 
 ;definition function =
+(provide =)
 (define =
   (lambda (x y)
     (cond
